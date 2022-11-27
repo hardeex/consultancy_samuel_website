@@ -11,7 +11,8 @@
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+     border:none;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
@@ -80,12 +81,21 @@ section{
     padding:1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
-    top:0; left: 0; right: 0;
+    top:0; 
+    left: 0; 
+    right: 0;
     z-index: 1000;
 }
 
-.header .logo img{
+.header .logo{
     height: 6rem;
+    font-size: 3rem;
+    color: rgb(247, 240, 240);
+    text-shadow: 2px 2px 2px rgba(255,255,255);
+}
+
+.header .logo:hover{
+    color: var(--main-color);
 }
 
 .header .navbar a{
@@ -117,7 +127,8 @@ section{
 
 .header .search-form{
     position: absolute;
-    top:115%; right: 7%;
+    top:115%;
+     right: 7%;
     background: #fff;
     width: 50rem;
     height: 5rem;
@@ -180,13 +191,13 @@ section{
     color: var(--black);
 }
 
-.header .cart-items-container .cart-item .fa-times:hover{
+/* .header .cart-items-container .cart-item .fa-times:hover{
     color:var(--main-color);
 }
 
 .header .cart-items-container .cart-item img{
     height: 7rem;
-}
+} */
 
 .header .cart-items-container .cart-item .content h3{
     font-size: 2rem;
@@ -208,7 +219,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/home-img.jpeg) no-repeat;
+    background:url(../images/hero_image_blank.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -218,7 +229,7 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     color:#fff;
 }
@@ -278,6 +289,12 @@ section{
     height: 10rem;
 }
 
+.menu .box-container .box p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
 .menu .box-container .box h3{
     color: #fff;
     font-size: 2rem;
@@ -295,6 +312,7 @@ section{
     text-decoration: line-through;
     font-weight: lighter;
 }
+
 
 .menu .box-container .box:hover{
     background:#fff;
@@ -334,8 +352,14 @@ section{
     padding: 2.5rem 0;
 }
 
-.products .box-container .box .image img{
-    height: 25rem;
+.products .box-container .box .image img,
+.recent-project-video{
+    height: 15rem;
+    width: 30rem;
+}
+
+.recent-project-video{
+    height: 18rem;
 }
 
 .products .box-container .box .content h3{
@@ -553,7 +577,7 @@ section{
     padding:1.5rem;
 }
 
-.footer .credit span{
+.footer .credit span a{
     color:var(--main-color);
 }
 
